@@ -62,18 +62,55 @@
     line-height: 26px;
     border: 1px solid;
 }
-.content-section label
-{
+
+.content-section label {
     margin-left: 16px;
-    color:#1E0E62 ;
+    color: #1E0E62;
     font-size: 16px;
     line-height: 22px;
     font-weight: 500;
 }
-.content-section-images img
-{   
+
+.content-section-images img {
     width: 121px;
     height: 90px;
-    margin-top:44px;
+    margin-top: 44px;
     margin-right: 20px;
+}
+
+.content-section-images img:hover {
+    transform: scale(1.1);
+    transition: all ease 1s;
+}
+
+
+@media all and (max-width: 480px) {
+
+    .hero-section {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .image-section {
+        width: fit-content;
+    }
+
+    .content-section {
+        text-align: center;
+        width: 300px;
+        font-size: 12px;
+        margin-left: 240px;
+        margin-top: 50px;
+    }
+
+    .content-section button,
+    label {
+        font-size: 14px;
+    }
+
+    .content-section-images {
+        display: flex;
+        justify-content: center;
+    }
+
 }
