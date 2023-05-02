@@ -114,3 +114,31 @@
     }
 
 }
+
+@media (min-width: 1024px) {
+    .hero-section {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        justify-items: center;
+    }
+
+    .image-section {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        
+    }
+
+    .content-section {
+        margin-top: 50px;
+        margin-right: 0;
+        margin-left: 220px;
+        max-width: 500px;
+        text-align: center;
+        justify-self: start;
+    }
+
+    .content-section button {
+        margin-top: 50px;
+    }
+}
